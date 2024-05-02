@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De onde Voce é?</title>
+
+    <style>
+
+        h1 {
+            font-family: cursive;
+            font: bolder;
+            font-size: 25pt;
+        }
+
+        body {
+            background-color: rgb(43, 39, 39);
+            color: white;
+
+        }
+        div {
+            margin-inline: 50px;
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>De onde Voçe é?</h1>
+   <input type="text" name="tx1" id="tx">
+   <input type="button" value="VER", onclick="verificar()">
+   <div id="res">
+
+   </div>
+<script>
+function verificar() {
+var pais = document.querySelector('#tx')
+var res = document.querySelector('#res')
+var nacio = pais.value
+res.innerHTML = `<p>Meu Pais é ${nacio}</p>`
+if (nacio != "Brasil") {
+    res.innerHTML += 'Então sou Estrangeiro'
+} else {
+    res.innerHTML += 'Sou Brasileiro'
+    //alert('Sou brasileiro')
+}
+
+}
+
+</script>
+</body>
+</html>

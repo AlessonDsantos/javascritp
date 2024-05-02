@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background: #3535a1;
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a Usar a <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em min</div>
+<p></p>
+    
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write(p1.innerHTML)
+        corpo.style.background = 'black'
+        p1.style.color = 'red'
+        
+        var d = window.document.getElementById('msg')
+        d.style.color = "green"
+        d.innerText = "Posso mudar o texto que ta dentro da div aqui" //Outra maneira de fazer isso ou qualquer alteraçao é assim//
+        //window.document.getElementById('msg').innerText = 'Posso alterar o texto da div usando o Id assim tambem, nao so o texto mas mudar o stylos etc.. So que o codigo fica maior'
+        
+    </script>
+</body>
+</html>

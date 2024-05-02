@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Botao</title>
+</head>
+<body>
+    
+  <input type="submit" class="log" value="Clicar">
+  <input type="submit" class="entrar" value="Entrar">
+  <input type="submit" class="botao" value="MUDAR">
+
+    <script>
+function exibirMensagem() {
+    alert("Ola Mundo bello");
+}
+
+var botao = document.querySelector('.log');
+botao.addEventListener('click', exibirMensagem);
+    
+
+function Clicar(){
+    console.log('Ta funcionando')
+}
+var clic = document.querySelector('.entrar')
+clic.addEventListener('click', Clicar)
+
+var rgb = document.querySelector('.botao')
+rgb.addEventListener('mouseover', function(){
+    rgb.style.backgroundColor = 'red'
+    })
+
+rgb.addEventListener('mouseout', function(){
+    rgb.style.backgroundColor = 'green'
+})
+
+rgb.addEventListener('click', function(){
+    alert('To ficando Bom')
+})
+
+</script>
+   
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botoes</title>
+</head>
+<body>
+    <input type="submit" class="clic" value="console">
+    <input type="submit" class="mudar" value="MUDAR">
+    <input type="submit" class="pulsar" value="Alerta">
+
+    <script>
+function cons(){
+    console.log('Ta funcioando')
+}
+var clicar = document.querySelector('.clic')
+clicar.addEventListener('click', cons)
+
+var rgb = document.querySelector('.mudar')
+rgb.addEventListener('click', function(){
+    rgb.style.backgroundColor = 'Red'
+})
+
+var rgb = document.querySelector('.mudar')
+rgb.addEventListener('mouseout', function(){
+    rgb.style.backgroundColor = 'blue'})
+
+var aler = document.querySelector('.pulsar')
+aler.addEventListener('click', function(){
+    alert("Ta Funfando")
+})
+
+    </script>
+</body>
+</html>
