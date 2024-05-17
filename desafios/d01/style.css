@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+body {
+    background-color: rgba(128, 128, 128, 0.692);
+}
+#conteiner {
+    margin: auto;
+    padding: 20px;
+    border: 1px 1px black;
+    width: 500px;
+    height: 200px;
+    background-color: aquamarine;
+}
+
