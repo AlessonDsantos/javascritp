@@ -9,5 +9,15 @@ body {
     width: 500px;
     height: 200px;
     background-color: aquamarine;
+    text-align: center;
 }
 
+#res {    
+    margin-top: 50px;
+    color: rgb(10, 10, 10);
+}
+
+#res:hover {
+    background-color: rgba(0, 0, 0, 0.39);
+    
+}

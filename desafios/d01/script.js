@@ -1,10 +1,11 @@
 function verificar() {
-anobi = document.querySelector('#txt')
-res = document.querySelector('#res')
-year = Number(anobi.value)
+var anobi = document.querySelector('#txt')
+var res = document.querySelector('#res')
+var year = Number(anobi.value)
     if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0) {
-        alert('Ano Bissexto')
-    } else {
-        alert('Não Bissexto')
+        res.innerHTML = 'Ano Bissexto'
+        
+    } else { res.innerHTML = 'Não bissexto'
+        
     }
 }
